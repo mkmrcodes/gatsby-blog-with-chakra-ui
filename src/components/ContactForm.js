@@ -3,7 +3,7 @@ import { Formik, Form } from "formik"
 import * as Yup from "yup"
 import FormikControl from "./FormikControl"
 import { Box, Button, Center, Flex, Stack, Text } from "@chakra-ui/react"
-import { RiMailSendLine } from "react-icons/Ri"
+import { RiMailSendLine } from "react-icons/ri"
 import telegramPush from "telegram-push"
 
 const ContactForm = () => {

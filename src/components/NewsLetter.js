@@ -13,7 +13,7 @@ import { Formik, Form } from "formik"
 import * as Yup from "yup"
 import FormikControl from "./FormikControl"
 import telegramPush from "telegram-push"
-import { RiMailSendLine } from "react-icons/Ri"
+import { RiMailSendLine } from "react-icons/ri"
 import BackgroundImage from "gatsby-background-image"
 
 const NewsLetter = () => {
