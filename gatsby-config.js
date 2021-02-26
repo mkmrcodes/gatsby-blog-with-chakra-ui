@@ -10,6 +10,8 @@ module.exports = {
       name: `Mehmet KÖMÜR`,
       avatar: `https://lh3.googleusercontent.com/ogw/ADGmqu-Lhsqv2U8gGEq07wWr1jIG8mVoQRbQGKVSb7pbrQ=s83-c-mo`,
     },
+    keywords: [`Blog`, `React`, `Gatsby`],
+    siteUrl: `https://musing-cori-b865db.netlify.app`,
     social: {
       twitter: `deneme`,
       instagram: `deneme`,
@@ -78,13 +80,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `MKMR`,
+        short_name: `Blog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/myicon.png`, // This path is relative to the root of the site.
       },
     },
     {

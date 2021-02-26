@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import SEO from "../components/seo"
 import kebabCase from "lodash/kebabCase"
 import {
   FaFacebookSquare,
@@ -32,10 +33,18 @@ import NewsLetter from "../components/NewsLetter"
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.mdx
   const imgSource = post.frontmatter.cover.childImageSharp.fluid
+  const seoImage = post.frontmatter.cover.childImageSharp.resize
   const tags = post.frontmatter.tags
   const { previous, next } = pageContext
   return (
     <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+        image={seoImage}
+        pathname={post.frontmatter.slug}
+      />
+
       <Container maxWidth="80ch">
         <Box mt={8} color="black" mx={2}>
           <VStack>
@@ -182,6 +191,11 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
+            }
+            resize(width: 800) {
+              src
+              height
+              width
             }
           }
         }

@@ -1,4 +1,5 @@
 import React, { Suspense, useRef } from "react"
+import SEO from "../components/seo"
 import {
   Canvas,
   useLoader,
@@ -72,6 +73,7 @@ const CameraControls = () => {
 const aboutPage = () => {
   return (
     <Layout>
+      <SEO title="MKMR About" />
       <Canvas style={{ background: "white" }}>
         <CameraControls />
         <directionalLight intensity={0.3} />

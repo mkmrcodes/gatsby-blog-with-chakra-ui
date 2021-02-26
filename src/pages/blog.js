@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import {
   Box,
   Center,
@@ -26,6 +27,8 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout>
+        <SEO title="MKMR Blog" />
+
         {/*         <Box>{this.props.location}</Box>
         <Box>{siteTitle}</Box> */}
 

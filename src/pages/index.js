@@ -8,7 +8,7 @@ import { Box } from "@chakra-ui/react"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="MKMR Blog" />
     <Box>
       <Img
         className="hero-picture"
